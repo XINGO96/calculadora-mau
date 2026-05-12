@@ -16,8 +16,13 @@ function calcular(){
     let total = resultadoDolar + carton;
 
     document.getElementById("kgYuca").innerText = costoKgYuca.toFixed(2);
+
     document.getElementById("kgMaquila").innerText = costoKgMaquila.toFixed(2);
+
     document.getElementById("precio").innerText = precio.toFixed(2);
+
     document.getElementById("resultadoDolar").innerText = resultadoDolar.toFixed(2);
+
     document.getElementById("total").innerText = total.toFixed(2);
+
 }
