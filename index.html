@@ -3,40 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora</title>
+  <title>Calculadora de Costos Yuca</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-  <h1>Calculadora de Costos</h1>
+<div class="main-container">
 
-  <label>Precio Dólar</label>
-  <input type="number" id="dolar" value="450">
+    <!-- HEADER -->
+    <div class="top-banner">
 
-  <label>Yuca Campo</label>
-  <input type="number" id="yuca" value="13000">
+        <div class="logo-box">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
 
-  <label>Maquila</label>
-  <input type="number" id="maquila" value="4500">
+        <div class="title-box">
+            <h1>
+                <center>
+                <span class="verde">Costos de</span><br>
+                <span class="marron">Yuca</span>
+                </center>
+            </h1>
+        </div>
 
-  <label>KG</label>
-  <input type="number" id="kg" value="23">
+    </div>
 
-  <label>Cartón</label>
-  <input type="number" id="carton" value="1.8">
+    <!-- CONTENIDO -->
+    <div class="content">
 
-  <button onclick="calcular()">Calcular</button>
+        <!-- FORMULARIO -->
+        <div class="card form-card">
 
-  <div class="resultados">
-    <p>Costo KG Yuca: <span id="kgYuca">0</span></p>
-    <p>Costo KG Maquila: <span id="kgMaquila">0</span></p>
-    <p>Precio: <span id="precio">0</span></p>
-    <p>Dólar: <span id="resultadoDolar">0</span></p>
-    <p>Total: <span id="total">0</span></p>
-  </div>
+            <div class="card-title green">
+                INGRESÁ LOS DATOS
+            </div>
+
+            <label>Precio Dólar (CRC)</label>
+            <input type="number" id="dolar" value="450">
+
+            <label>Yuca Campo (CRC)</label>
+            <input type="number" id="yuca" value="13000">
+
+            <label>Maquila (CRC)</label>
+            <input type="number" id="maquila" value="4500">
+
+            <label>KG</label>
+            <input type="number" id="kg" value="23">
+
+            <label>Cartón (USD)</label>
+            <input type="number" id="carton" value="1.8">
+
+            <button onclick="calcular()">
+                CALCULAR
+            </button>
+
+        </div>
+
+        <!-- RESULTADOS -->
+        <div class="card result-card">
+
+            <div class="card-title yellow">
+                RESULTADOS
+            </div>
+
+            <div class="resultado-item">
+                <span>Costo KG Yuca</span>
+                <strong id="kgYuca">0</strong>
+            </div>
+
+            <div class="resultado-item">
+                <span>Costo KG Maquila</span>
+                <strong id="kgMaquila">0</strong>
+            </div>
+
+            <div class="resultado-item">
+                <span>Precio (CRC)</span>
+                <strong id="precio">0</strong>
+            </div>
+
+            <div class="resultado-item">
+                <span>Dólar (USD)</span>
+                <strong id="resultadoDolar">0</strong>
+            </div>
+
+            <div class="total-box">
+                <div class="total-label">
+                    TOTAL (USD)
+                </div>
+
+                <div class="total-valor" id="total">
+                    0
+                </div>
+            </div>
+
+            <div class="info-box">
+                El total incluye el valor en dólares + el costo del cartón.
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Desarrollado por <a href="https://wa.me/50684225223" target="_blank">D-Xing</a>
+    </div>
+
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
