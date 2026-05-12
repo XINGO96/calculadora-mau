@@ -26,3 +26,27 @@ function calcular(){
     document.getElementById("total").innerText = total.toFixed(2);
 
 }
+async function obtenerTipoCambio(){
+
+    try{
+
+        const response = await fetch(
+            "https://api.exchangerate-api.com/v4/latest/USD"
+        );
+
+        const data = await response.json();
+
+        const crc = data.rates.CRC;
+
+        document.getElementById("dolar").value =
+            crc.toFixed(2);
+
+    }catch(error){
+
+        alert("No se pudo obtener el tipo de cambio");
+
+        console.log(error);
+
+    }
+
+}

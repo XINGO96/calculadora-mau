@@ -199,7 +199,29 @@ button{
     color:#5D4037;
     line-height:1.4;
 }
+.dolar-container{
+    display:flex;
+    gap:10px;
+    align-items:center;
+    margin:0 15px;
+}
 
+.dolar-container input{
+    flex:1;
+    margin:0;
+}
+
+.btn-dolar{
+    width:auto;
+    margin:0;
+    padding:14px 18px;
+    font-size:16px;
+    border-radius:12px;
+    background:#FBC02D;
+    color:#4E342E;
+    font-weight:bold;
+    white-space:nowrap;
+}
 /* FOOTER */
 
 .footer{
